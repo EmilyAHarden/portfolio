@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+<head>
+		<title>Emily Harden</title>
+		<link rel="stylesheet" href="styles/index.processed.css">
+		<link rel="stylesheet" href="styles/gallery.processed.css">
+
+</head>
+
+<body>
+		<header>
+				<!-- navbar -->
+				<nav class="topnav" id="myTopnav">
+						<a href="index.html">
+          About Me
+        </a>
+						<a href="my_work.html" class="active">
+          My Work
+        </a>
+						<a href="studyabroad.html">
+          Study Abroad
+        </a>
+						<a href="contactme.html" id="contactheader">
+          Contact
+        </a>
+				</nav>
+		</header>
+		<div class="headertitles">
+				<h2>Graphic Design</h2>
+		</div>
+
+		<div class="row">
+				<div class="column">
+						<img src="https://i.imgur.com/44MBg8C.jpg" style="width:100%" alt="mack motor mania flyer" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+						<img src="https://i.imgur.com/NENkU5i.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="hometown">
+				</div>
+				<div class="column">
+						<img src="https://i.imgur.com/HXdPMdt.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="nighthome">
+				</div>
+				<div class="column">
+						<img src="https://i.imgur.com/3PUKxrO.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="princess">
+				</div>
+		</div>
+
+		<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+						<div class="mySlides">
+								<div class="numbertext">1 / 4</div>
+								<img src="https://i.imgur.com/44MBg8C.jpg" style="width:100%" alt="mack motor mania flyer">
+						</div>
+
+						<div class="mySlides">
+								<div class="numbertext">2 / 4</div>
+								<img src="https://i.imgur.com/NENkU5i.jpg" style="width:100%" alt="hometown">
+						</div>
+
+						<div class="mySlides">
+								<div class="numbertext">3 / 4</div>
+								<img src="https://i.imgur.com/HXdPMdt.jpg" style="width:100%" alt="nighthome">
+						</div>
+
+						<div class="mySlides">
+								<div class="numbertext">4 / 4</div>
+								<img src="https://i.imgur.com/3PUKxrO.jpg" style="width:100%" alt="princess">
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<div class="caption-container">
+								<p id="caption"></p>
+						</div>
+
+						<div class="column">
+								<img class="demo cursor" src="https://i.imgur.com/44MBg8C.jpg" style="width:20%" onclick="currentSlide(1)" alt="mack motor mania flyer">
+						</div>
+						<div class="column">
+								<img class="demo cursor" src="https://i.imgur.com/NENkU5i.jpg" style="width:20%" onclick="currentSlide(2)" alt="hometown">
+						</div>
+						<div class="column">
+								<img class="demo cursor" src="https://i.imgur.com/HXdPMdt.jpg" style="width:20%" onclick="currentSlide(3)" alt="nighthome">
+						</div>
+						<div class="column">
+								<img class="demo cursor" src="https://i.imgur.com/3PUKxrO.jpg" style="width:20%" onclick="currentSlide(4)" alt="princess">
+						</div>
+				</div>
+		</div>
+<script src="scripts/index.js"></script>
+
+</body>
+
+</html>
